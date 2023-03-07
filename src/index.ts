@@ -1,2 +1,8 @@
-export { parseTokenTree } from './algorithm';
-export type { Token, TokenTree, TokenType } from './types';
+export { parseTokenTree } from './algorithms/parse';
+export type {
+  ParsedTokenTree,
+  Token,
+  TokenTree,
+  TokenTreeValue,
+  TokenType,
+} from './types';

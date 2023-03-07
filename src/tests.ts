@@ -1,4 +1,4 @@
-import { parseTokenTree } from './algorithm';
+import { parseTokenTree } from './algorithms/parse';
 
 const givenTokenTree = {
   colors: {
@@ -19,9 +19,19 @@ const givenTokenTree = {
   },
 } as const;
 
-console.log(
-  parseTokenTree(givenTokenTree, {
-    resolveAliases: true,
-    publishMetadata: true,
-  })['derived colors']
-);
+const whereWithResolvedAliases = parseTokenTree(givenTokenTree, {
+  resolveAliases: true,
+});
+
+const whereWithMetadata = parseTokenTree(givenTokenTree, {
+  publishMetadata: true,
+});
+
+const whereWithResolvedAliasesAndMetadata = parseTokenTree(givenTokenTree, {
+  resolveAliases: true,
+  publishMetadata: true,
+});
+
+console.log(whereWithResolvedAliases);
+console.log(whereWithMetadata);
+console.log(whereWithResolvedAliasesAndMetadata);
