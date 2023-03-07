@@ -1,0 +1,27 @@
+{
+  "name": "specify-test",
+  "version": "0.0.1",
+  "author": "William CHAZOT (Nonudian)",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nonudian/specify-test.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "yarn tsc -w",
+    "test": "node dist/tests.js"
+  },
+  "devDependencies": {
+    "@types/lodash.clonedeep": "^4.5.7",
+    "@types/lodash.get": "^4.4.7",
+    "@types/lodash.set": "^4.3.7",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2"
+  }
+}
