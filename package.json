@@ -23,5 +23,8 @@
     "lodash.clonedeep": "^4.5.0",
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2"
+  },
+  "publishConfig": {
+    "@Nonudian:registry": "https://npm.pkg.github.com"
   }
 }
